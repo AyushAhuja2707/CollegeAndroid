@@ -53,7 +53,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menu_item) {
         switch (menu_item.getItemId()) {
             case R.id.nav_timetable:
-                Toast.makeText(this, "Practice", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Time-Table", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_practice:
                 Toast.makeText(this, "Practice", Toast.LENGTH_SHORT).show();
