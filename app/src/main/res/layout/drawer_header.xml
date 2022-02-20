@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:orientation="vertical"
-    android:background="#edcb42"
+    android:background="#5e4327"
     android:gravity="bottom"
     android:padding="10dp">
 
@@ -13,13 +13,14 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/profile_pic" />
+        android:src="@drawable/profile_pic"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name"
-        android:textSize="25sp"/>
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
 
 </LinearLayout>
