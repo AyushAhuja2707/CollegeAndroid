@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Window;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_practice:
                 Toast.makeText(this, "Practice", Toast.LENGTH_SHORT).show();
+                Intent auth = new Intent(getApplicationContext(), auth.class);
+                startActivity(auth);
                 break;
             case R.id.nav_syllabus:
                 Toast.makeText(this, "Syllabus", Toast.LENGTH_SHORT).show();
