@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_timetable"
-            android:title="Time-Table"
-            android:icon="@drawable/timetable"/>
-        <item
-            android:id="@+id/nav_practice"
-            android:title="Practice"
-            android:icon="@drawable/practice"/>
-        <item
-            android:id="@+id/nav_syllabus"
-            android:title="Syllabus"
-            android:icon="@drawable/syllabus"/>
-        <item
-            android:id="@+id/nav_notification"
-            android:title="Notifications"
-            android:icon="@drawable/notification"/>
-        <item
-            android:id="@+id/nav_feedback"
-            android:title="Feedback"
-            android:icon="@drawable/feedback"/>
-        <item
-            android:id="@+id/nav_logout"
-            android:title="Logout"
-            android:icon="@drawable/logout"/>
-    </group>
+    <item
+        android:id="@+id/nav_timetable"
+        android:icon="@drawable/timetable"
+        android:title="Time-Table" />
+    <item
+        android:id="@+id/nav_practice"
+        android:icon="@drawable/practice"
+        android:title="Practice" />
+    <item
+        android:id="@+id/nav_syllabus"
+        android:icon="@drawable/syllabus"
+        android:title="Syllabus" />
+    <item
+        android:id="@+id/nav_notification"
+        android:icon="@drawable/notification"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
 </menu>
