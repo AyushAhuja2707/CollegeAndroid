@@ -70,6 +70,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                finish();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
