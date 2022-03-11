@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "369437057468",
+    "project_id": "ezee-1f20f",
+    "storage_bucket": "ezee-1f20f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369437057468:android:a0a254d69620a511a68bb9",
+        "android_client_info": {
+          "package_name": "com.example.ezee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369437057468-t15thgn6ebk8q9vc5honsp92n3pekk4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2I0lZ1PD_AhkC6OCuzZBA6q6xLEJE3Nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369437057468-t15thgn6ebk8q9vc5honsp92n3pekk4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
