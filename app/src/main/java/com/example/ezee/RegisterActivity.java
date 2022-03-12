@@ -69,9 +69,9 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onSuccess(AuthResult authResult) {
                 HashMap<String, Object> udets = new HashMap<>();
+                udets.put("email", email);
                 udets.put("fname", fname);
                 udets.put("lname", lname);
-                udets.put("email", email);
                 udets.put("uid", uid);
                 udets.put("id", mAuth.getCurrentUser().getUid());
 
