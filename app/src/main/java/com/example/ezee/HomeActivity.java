@@ -9,9 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,8 +21,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -103,7 +99,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_logout:
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                startActivity(new Intent(HomeActivity.this, MainActivity.class));
                 finish();
                 break;
         }
