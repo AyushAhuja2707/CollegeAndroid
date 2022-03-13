@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ForgotPassActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
