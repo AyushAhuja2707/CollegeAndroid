@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:orientation="vertical"
-    android:background="#5e4327"
+    android:background="#70471F"
     android:gravity="bottom"
     android:padding="10dp">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/profile_pic"/>
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/profile_pic" />
 
     <TextView
         android:id="@+id/head_user"
