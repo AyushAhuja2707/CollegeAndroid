@@ -40,13 +40,11 @@ public class ForgotPassActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task task) {
                         if(task.isSuccessful()){
-                            Intent a = new Intent(ForgotPassActivity.this,LoginActivity.class);
-                            startActivity(a);
+                            Toast.makeText(ForgotPassActivity.this, "Password reset email sent, check your Inbox", Toast.LENGTH_SHORT).show();
+                            ForgotPassActivity.super.onBackPressed();
                             finish();
-                        }else{
-                            Toast.makeText(ForgotPassActivity.this, "Error", Toast.LENGTH_SHORT).show();
                         }
-
+                        else Toast.makeText(ForgotPassActivity.this, "Email not registered with us", Toast.LENGTH_SHORT).show();
                     }
                 });
 

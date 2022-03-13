@@ -68,20 +68,29 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth.createUserWithEmailAndPassword(email, pwd).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
-                HashMap<String, Object> udets = new HashMap<>();
-                udets.put("email", email);
-                udets.put("fname", fname);
-                udets.put("lname", lname);
-                udets.put("uid", uid);
-                udets.put("id", mAuth.getCurrentUser().getUid());
-
-                db.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
+                mAuth.getCurrentUser().sendEmailVerification().addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
-                            finish();
+                            HashMap<String, Object> udets = new HashMap<>();
+                            udets.put("admin", false);
+                            udets.put("email", email);
+                            udets.put("fname", fname);
+                            udets.put("lname", lname);
+                            udets.put("uid", uid);
+                            udets.put("id", mAuth.getCurrentUser().getUid());
+
+                            db.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                @Override
+                                public void onComplete(@NonNull Task<Void> task) {
+                                    if(task.isSuccessful()){
+                                        FirebaseAuth.getInstance().signOut();
+                                        Toast.makeText(RegisterActivity.this, "Registration Successful, a verification link has been sent to your email", Toast.LENGTH_SHORT).show();
+                                        RegisterActivity.super.onBackPressed();
+                                        finish();
+                                    }
+                                }
+                            });
                         }
                     }
                 });

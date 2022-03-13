@@ -79,7 +79,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onBackPressed() {
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) drawerLayout.closeDrawer(GravityCompat.START);
-        else moveTaskToBack(true);
+        else super.onBackPressed();
     }
 
     @Override
@@ -103,7 +103,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_logout:
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
                 finish();
                 break;
         }

@@ -58,8 +58,8 @@ public class LoginActivity extends AppCompatActivity {
         regui.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent login = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(login);
+                Intent reg = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(reg);
             }
         });
 
@@ -73,14 +73,29 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(FirebaseAuth.getInstance().getCurrentUser() != null) {
+            startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            finish();
+        }
+    }
+
     private void loginuser(String email, String pwd) {
         mAuth.signInWithEmailAndPassword(email, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this, HomeActivity.class));
-                    finishAffinity();
+                    if(mAuth.getCurrentUser().isEmailVerified()){
+                        Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                        finishAffinity();
+                    }
+                    else{
+                        FirebaseAuth.getInstance().signOut();
+                        Toast.makeText(LoginActivity.this, "Email not verified", Toast.LENGTH_SHORT).show();
+                    }
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
