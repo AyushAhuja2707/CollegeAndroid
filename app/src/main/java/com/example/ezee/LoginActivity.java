@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText uname, password;
     Button loginbtn;
     TextView regui;
+    TextView forgotpass;
 
     FirebaseAuth mAuth;
 
@@ -37,6 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         loginbtn = findViewById(R.id.loginbtn);
         regui = findViewById(R.id.register);
+        forgotpass = findViewById(R.id.forgotpass);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -60,6 +62,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(login);
             }
         });
+
+        forgotpass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent fp = new Intent(LoginActivity.this,ForgotPassActivity.class);
+                startActivity(fp);
+            }
+        });
+
     }
 
     private void loginuser(String email, String pwd) {
