@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +36,10 @@ public class ForgotPassActivity extends AppCompatActivity {
 
                 String email = fgtpassusername.getText().toString();
 
+                if (TextUtils.isEmpty(email) ) {
+                    Toast.makeText(ForgotPassActivity.this, "Required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 Task t = mauth.sendPasswordResetEmail(email);
                 t.addOnCompleteListener(new OnCompleteListener() {
                     @Override
