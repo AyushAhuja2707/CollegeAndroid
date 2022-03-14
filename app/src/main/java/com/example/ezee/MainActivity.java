@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button loginbtn;
     TextView regui;
     TextView forgotpass;
+    Loading load;
 
     FirebaseAuth mAuth;
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         loginbtn = findViewById(R.id.loginbtn);
         regui = findViewById(R.id.register);
         forgotpass = findViewById(R.id.forgotpass);
+        load = new Loading(MainActivity.this);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -49,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 if(TextUtils.isEmpty(email) || TextUtils.isEmpty(pwd))
                     Toast.makeText(MainActivity.this, "Empty Credentials", Toast.LENGTH_SHORT).show();
                 else if(pwd.length()<6) Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
-                else loginuser(email, pwd);
+                else{
+                    load.startLoading();
+                    loginuser(email, pwd);
+                }
             }
         });
 
@@ -86,12 +91,14 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     if(mAuth.getCurrentUser().isEmailVerified()){
+                        load.dismissDialog();
                         Toast.makeText(MainActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(MainActivity.this, HomeActivity.class));
                         finishAffinity();
                     }
                     else{
                         FirebaseAuth.getInstance().signOut();
+                        load.dismissDialog();
                         Toast.makeText(MainActivity.this, "Email not verified", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -99,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
+                load.dismissDialog();
                 Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
             }
         });

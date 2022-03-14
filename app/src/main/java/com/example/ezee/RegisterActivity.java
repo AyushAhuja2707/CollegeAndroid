@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,8 +16,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 
@@ -27,7 +25,8 @@ public class RegisterActivity extends AppCompatActivity {
     Button regbtn;
     EditText registerName, registerName2, registerusername, reguid, password, confirmpassword;
     FirebaseAuth mAuth;
-    DatabaseReference db;
+    FirebaseFirestore fst;
+    Loading load;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
         regbtn = findViewById(R.id.regbtn);
 
         mAuth = FirebaseAuth.getInstance();
-        db = FirebaseDatabase.getInstance().getReference();
+        fst = FirebaseFirestore.getInstance();
 
         reguid.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
@@ -63,13 +62,22 @@ public class RegisterActivity extends AppCompatActivity {
                 String pwd = password.getText().toString();
                 String cpwd = confirmpassword.getText().toString();
 
+                load = new Loading(RegisterActivity.this);
+
                 if (TextUtils.isEmpty(fname) || TextUtils.isEmpty(lname) || TextUtils.isEmpty(email) || TextUtils.isEmpty(uid) || TextUtils.isEmpty(pwd) || TextUtils.isEmpty(cpwd))
                     Toast.makeText(RegisterActivity.this, "All fields required", Toast.LENGTH_SHORT).show();
-                else if (pwd.length() < 6) Toast.makeText(RegisterActivity.this, "Atleast 6 characters required in Password", Toast.LENGTH_SHORT).show();
-                else if (!pwd.equals(cpwd)) Toast.makeText(RegisterActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
+                else if (pwd.length() < 6)
+                    Toast.makeText(RegisterActivity.this, "Atleast 6 characters required in Password", Toast.LENGTH_SHORT).show();
+                else if(!pwd.equals(cpwd))
+                    Toast.makeText(RegisterActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
                 else{
                     String[] mand = uid.split("_");
-                    regUser(fname, lname, email, mand, pwd);
+                    if(mand.length != 4)
+                        Toast.makeText(RegisterActivity.this, "Incorrect UID", Toast.LENGTH_SHORT).show();
+                    else{
+                        load.startLoading();
+                        regUser(fname, lname, email, mand, pwd);
+                    }
                 }
             }
         });
@@ -94,15 +102,22 @@ public class RegisterActivity extends AppCompatActivity {
                                 udets.put(keys[i], mand[i]);
                             }
 
-                            db.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
+                            fst.collection("Users").document(mAuth.getCurrentUser().getUid()).set(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
                                         FirebaseAuth.getInstance().signOut();
+                                        load.dismissDialog();
                                         Toast.makeText(RegisterActivity.this, "Registration Successful, a verification link has been sent to your email", Toast.LENGTH_SHORT).show();
                                         RegisterActivity.super.onBackPressed();
                                         finish();
                                     }
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    load.dismissDialog();
+                                    Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                                 }
                             });
                         }
@@ -112,6 +127,7 @@ public class RegisterActivity extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
+                load.dismissDialog();
                 Toast.makeText(RegisterActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
