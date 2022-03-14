@@ -3,9 +3,9 @@ package com.example.ezee;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,6 +45,14 @@ public class RegisterActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         db = FirebaseDatabase.getInstance().getReference();
 
+        reguid.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus) reguid.setHint("RollNo_Year_Dept_Div");
+                else reguid.setHint("UID");
+            }
+        });
+
         regbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,12 +67,15 @@ public class RegisterActivity extends AppCompatActivity {
                     Toast.makeText(RegisterActivity.this, "All fields required", Toast.LENGTH_SHORT).show();
                 else if (pwd.length() < 6) Toast.makeText(RegisterActivity.this, "Atleast 6 characters required in Password", Toast.LENGTH_SHORT).show();
                 else if (!pwd.equals(cpwd)) Toast.makeText(RegisterActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
-                else regUser(fname, lname, email, uid, pwd);
+                else{
+                    String[] mand = uid.split("_");
+                    regUser(fname, lname, email, mand, pwd);
+                }
             }
         });
     }
 
-    private void regUser(String fname, String lname, String email, String uid, String pwd) {
+    private void regUser(String fname, String lname, String email, String[] mand, String pwd) {
         mAuth.createUserWithEmailAndPassword(email, pwd).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
@@ -72,12 +83,16 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
+                            String[] keys = {"Roll_Num", "Year", "Dept", "Div"};
+
                             HashMap<String, Object> udets = new HashMap<>();
                             udets.put("admin", false);
                             udets.put("email", email);
                             udets.put("fname", fname);
                             udets.put("lname", lname);
-                            udets.put("uid", uid);
+                            for(int i=0; i<mand.length; i++){
+                                udets.put(keys[i], mand[i]);
+                            }
 
                             db.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
