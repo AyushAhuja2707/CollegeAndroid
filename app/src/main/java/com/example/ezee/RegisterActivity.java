@@ -78,7 +78,6 @@ public class RegisterActivity extends AppCompatActivity {
                             udets.put("fname", fname);
                             udets.put("lname", lname);
                             udets.put("uid", uid);
-                            udets.put("id", mAuth.getCurrentUser().getUid());
 
                             db.child("Users").child(mAuth.getCurrentUser().getUid()).setValue(udets).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
