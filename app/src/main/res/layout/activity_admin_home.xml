@@ -15,8 +15,8 @@
 
 
         <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="1109dp"
+            android:layout_height="1333dp"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
@@ -42,14 +42,13 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:background="@drawable/ic_baseline_backup_table_24"
-                        android:padding="20dp"/>
+                        android:padding="20dp" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#c1c1c1"
                         android:layout_marginTop="10dp"
-                        />
+                        android:background="#c1c1c1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -91,9 +90,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#c1c1c1"
                         android:layout_marginTop="10dp"
-                        />
+                        android:background="#c1c1c1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -135,9 +133,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#c1c1c1"
                         android:layout_marginTop="10dp"
-                        />
+                        android:background="#c1c1c1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -173,16 +170,14 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:background="@drawable/ic_baseline_add_task_24"
-                        android:padding="20dp"
-                        />
+                        android:padding="20dp" />
 
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#c1c1c1"
                         android:layout_marginTop="10dp"
-                        />
+                        android:background="#c1c1c1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -197,6 +192,7 @@
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -223,9 +219,8 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
-                        android:background="#c1c1c1"
                         android:layout_marginTop="10dp"
-                        />
+                        android:background="#c1c1c1" />
 
                     <TextView
                         android:layout_width="wrap_content"
