@@ -17,11 +17,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -34,7 +29,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
     FirebaseAuth mAuth;
-//    DatabaseReference db;
     FirebaseFirestore fst;
 
     @Override
@@ -47,7 +41,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         LinearLayout header = (LinearLayout) navigationView.getHeaderView(0);
         toolbar = findViewById(R.id.toolbar);
         mAuth = FirebaseAuth.getInstance();
-//        db = FirebaseDatabase.getInstance().getReference();
         fst = FirebaseFirestore.getInstance();
 
         setSupportActionBar(toolbar);
@@ -62,7 +55,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
-
         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -76,25 +68,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 else Toast.makeText(HomeActivity.this, "User data not found", Toast.LENGTH_SHORT).show();
             }
         });
-
-//        DatabaseReference data =  db.child("Users").child(mAuth.getCurrentUser().getUid());
-//        data.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                String name = "";
-//                for(DataSnapshot ss : snapshot.getChildren()){
-//                    if(ss.getKey().equals("fname") || ss.getKey().equals("lname"))
-//                        name = name + ss.getValue().toString() + " ";
-//                }
-//                TextView user = header.findViewById(R.id.head_user);
-//                user.setText(name);
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//                Toast.makeText(HomeActivity.this, "Error Fetching Database", Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
 
     @Override

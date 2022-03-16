@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     Loading load;
 
     FirebaseAuth mAuth;
+    FirebaseFirestore fst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         load = new Loading(MainActivity.this);
 
         mAuth = FirebaseAuth.getInstance();
+        fst = FirebaseFirestore.getInstance();
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
