@@ -22,6 +22,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseFirestore fst;
+    DocumentReference data;
+
+    static String TOKEN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         fst = FirebaseFirestore.getInstance();
+
+        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
+                @Override
+                public void onComplete(@NonNull Task<String> task) {
+                    if (task.isSuccessful()) {
+                        TOKEN = task.getResult();
+                    }
+                }
+            });
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -90,71 +103,86 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser() != null) {
 
-
-            DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+            data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+            data.update("token", MainActivity.TOKEN);
             data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                     admin = documentSnapshot.getBoolean("admin");
-                    stradmin = admin+"";
-                    Log.i("Ayush",stradmin);
+                    stradmin = admin.toString();
 
-                    if(stradmin.equals("true")){
+                    if (stradmin.equals("true")) {
+                        FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if(task.isSuccessful())
+                                    Toast.makeText(MainActivity.this, "Looking for Notifications", Toast.LENGTH_SHORT).show();
+                                else
+                                    Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                         startActivity(new Intent(MainActivity.this, AdminDashboard.class));
-                        finishAffinity();
                     }
                     else {
+                        FirebaseMessaging.getInstance().subscribeToTopic("students").addOnCompleteListener(new OnCompleteListener<Void>() {
+                            @Override
+                            public void onComplete(@NonNull Task<Void> task) {
+                                if (task.isSuccessful())
+                                    Toast.makeText(MainActivity.this, "Looking for Notifications", Toast.LENGTH_SHORT).show();
+                                else
+                                    Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
+                            }
+                        });
                         startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                        finishAffinity();
                     }
+                    finishAffinity();
                 }
             });
-
-
-
-
-
-
-
-
-
-//            startActivity(new Intent(MainActivity.this, HomeActivity.class));
-//            finish();
         }
 
     }
 
     private void loginuser(String email, String pwd) {
-
-
-
         mAuth.signInWithEmailAndPassword(email, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-
                     if(mAuth.getCurrentUser().isEmailVerified()){
-
                         load.dismissDialog();
-
-                        DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+                        data = data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+                        data.update("token", MainActivity.TOKEN);
                         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 admin = documentSnapshot.getBoolean("admin");
-                                stradmin = admin+"";
-                                Log.i("Ayush",stradmin);
+                                stradmin = admin.toString();
 
-                                if(stradmin.equals("true")){
+                                if (stradmin.equals("true")) {
+                                    FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if(task.isSuccessful())
+                                                Toast.makeText(MainActivity.this, "Looking for Notifications", Toast.LENGTH_SHORT).show();
+                                            else
+                                                Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
                                     startActivity(new Intent(MainActivity.this, AdminDashboard.class));
-                                    finishAffinity();
                                 }
                                 else {
-                                    Toast.makeText(MainActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                                    FirebaseMessaging.getInstance().subscribeToTopic("students").addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if (task.isSuccessful())
+                                                Toast.makeText(MainActivity.this, "Looking for Notifications", Toast.LENGTH_SHORT).show();
+                                            else
+                                                Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
                                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                                    finishAffinity();
                                 }
+                                finishAffinity();
                             }
                         });
 
