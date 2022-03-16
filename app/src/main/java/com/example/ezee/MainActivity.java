@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,9 +15,12 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     TextView regui;
     TextView forgotpass;
     Loading load;
+    static String stradmin = "false";
+    Boolean admin;
 
     FirebaseAuth mAuth;
     FirebaseFirestore fst;
@@ -83,21 +89,76 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         if(FirebaseAuth.getInstance().getCurrentUser() != null) {
-            startActivity(new Intent(MainActivity.this, HomeActivity.class));
-            finish();
+
+
+            DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+            data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                @Override
+                public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    admin = documentSnapshot.getBoolean("admin");
+                    stradmin = admin+"";
+                    Log.i("Ayush",stradmin);
+
+                    if(stradmin.equals("true")){
+                        startActivity(new Intent(MainActivity.this, AdminDashboard.class));
+                        finishAffinity();
+                    }
+                    else {
+                        startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                        finishAffinity();
+                    }
+                }
+            });
+
+
+
+
+
+
+
+
+
+//            startActivity(new Intent(MainActivity.this, HomeActivity.class));
+//            finish();
         }
+
     }
 
     private void loginuser(String email, String pwd) {
+
+
+
         mAuth.signInWithEmailAndPassword(email, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+
                     if(mAuth.getCurrentUser().isEmailVerified()){
+
                         load.dismissDialog();
-                        Toast.makeText(MainActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                        finishAffinity();
+
+                        DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+                        data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                            @Override
+                            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                                admin = documentSnapshot.getBoolean("admin");
+                                stradmin = admin+"";
+                                Log.i("Ayush",stradmin);
+
+                                if(stradmin.equals("true")){
+                                    startActivity(new Intent(MainActivity.this, AdminDashboard.class));
+                                    finishAffinity();
+                                }
+                                else {
+                                    Toast.makeText(MainActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+                                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                                    finishAffinity();
+                                }
+                            }
+                        });
+
+
                     }
                     else{
                         FirebaseAuth.getInstance().signOut();
@@ -117,3 +178,5 @@ public class MainActivity extends AppCompatActivity {
 }
 
 // TODO: 1032190111@tcetmumbai.in
+// TODO: 1032190095@tcetmumbai.in
+// TODO: bhagatchirag2@gmail.com
