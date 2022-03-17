@@ -18,11 +18,6 @@ public class FCMService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
-        if(remoteMessage.getData().size()>0){
-            showNotification(remoteMessage.getData().get("title"),
-                    remoteMessage.getData().get("message"));
-        }
-
         if (remoteMessage.getNotification() != null) {
             showNotification(
                     remoteMessage.getNotification().getTitle(),

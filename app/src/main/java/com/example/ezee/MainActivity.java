@@ -56,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
         fst = FirebaseFirestore.getInstance();
 
         FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
-                @Override
-                public void onComplete(@NonNull Task<String> task) {
-                    if (task.isSuccessful()) {
-                        TOKEN = task.getResult();
-                    }
+            @Override
+            public void onComplete(@NonNull Task<String> task) {
+                if(task.isSuccessful()){
+                    TOKEN = task.getResult();
                 }
-            });
+            }
+        });
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
         if(FirebaseAuth.getInstance().getCurrentUser() != null) {
 
             data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
-            data.update("token", MainActivity.TOKEN);
             data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -149,9 +149,11 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     if(mAuth.getCurrentUser().isEmailVerified()){
+
                         load.dismissDialog();
                         data = data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
-                        data.update("token", MainActivity.TOKEN);
+                        data.update("token", TOKEN);
+
                         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
