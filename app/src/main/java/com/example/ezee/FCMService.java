@@ -46,6 +46,7 @@ public class FCMService extends FirebaseMessagingService {
             notificationManager.createNotificationChannel(notificationChannel);
         }
 
+//        TODO: Avoid Overwrting previous notifications.
         notificationManager.notify(0, builder.build());
     }
 }

@@ -149,17 +149,14 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     if(mAuth.getCurrentUser().isEmailVerified()){
-
                         load.dismissDialog();
                         data = data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
                         data.update("token", TOKEN);
-
                         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 admin = documentSnapshot.getBoolean("admin");
                                 stradmin = admin.toString();
-
                                 if (stradmin.equals("true")) {
                                     FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
@@ -187,8 +184,6 @@ public class MainActivity extends AppCompatActivity {
                                 finishAffinity();
                             }
                         });
-
-
                     }
                     else{
                         FirebaseAuth.getInstance().signOut();
