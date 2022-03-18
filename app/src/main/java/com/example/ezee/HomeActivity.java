@@ -92,7 +92,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_feedback:
-                Toast.makeText(this, "Feedback", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,
+                        new FeedBackFragment()).commit();
                 break;
             case R.id.nav_logout:
                 FirebaseAuth.getInstance().signOut();
