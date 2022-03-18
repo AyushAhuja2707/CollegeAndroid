@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
     TextView regui;
     TextView forgotpass;
     Loading load;
-    static String stradmin = "false";
     Boolean admin;
 
     FirebaseAuth mAuth;
@@ -103,15 +102,13 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         if(FirebaseAuth.getInstance().getCurrentUser() != null) {
-
             data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
             data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                     admin = documentSnapshot.getBoolean("admin");
-                    stradmin = admin.toString();
 
-                    if (stradmin.equals("true")) {
+                    if (admin) {
                         FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
@@ -149,15 +146,13 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     if(mAuth.getCurrentUser().isEmailVerified()){
-                        load.dismissDialog();
-                        data = data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
+                        data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
                         data.update("token", TOKEN);
                         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
                                 admin = documentSnapshot.getBoolean("admin");
-                                stradmin = admin.toString();
-                                if (stradmin.equals("true")) {
+                                if (admin) {
                                     FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
@@ -181,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                                     });
                                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
                                 }
+                                load.dismissDialog();
                                 finishAffinity();
                             }
                         });

@@ -1,7 +1,9 @@
 package com.example.ezee;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -36,13 +39,14 @@ public class PushNotifications extends AppCompatActivity implements AdapterView.
         topics.setOnItemSelectedListener(this);
 
         List<String> subTopics = new ArrayList<String>();
-        subTopics.add("Students");
         subTopics.add("Admins");
+        subTopics.add("Students");
 
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, subTopics);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         topics.setAdapter(dataAdapter);
+        topics.setSelection(dataAdapter.getPosition("Students"));
 
         push.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +67,7 @@ public class PushNotifications extends AppCompatActivity implements AdapterView.
         });
     }
 
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemSelected(@NonNull AdapterView<?> parent, View view, int position, long id) {
         selectedTopic = parent.getItemAtPosition(position).toString();
         Toast.makeText(parent.getContext(), selectedTopic+" will be notified", Toast.LENGTH_LONG).show();
     }
