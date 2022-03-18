@@ -12,13 +12,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:text="Push Notifications"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,16 +40,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/atitle"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:background="#30ffffff"
         android:drawablePadding="20dp"
         android:hint="Message"
-        android:inputType="textMultiLine"
+        android:inputType="textLongMessage"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/atitle"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Spinner
+        android:id="@+id/topics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/amsg"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/amsg"
+        app:layout_constraintTop_toBottomOf="@+id/amsg" />
 
     <Button
         android:id="@+id/apush"
@@ -58,11 +67,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/amsg"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="44dp"
         android:backgroundTint="@color/design_default_color_secondary"
         android:text="PUSH"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amsg" />
+        app:layout_constraintTop_toBottomOf="@+id/topics" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
