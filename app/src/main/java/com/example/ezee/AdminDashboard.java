@@ -17,7 +17,7 @@ public class AdminDashboard extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseFirestore fst;
     TextView logouttext;
-    MaterialCardView lgt;
+    MaterialCardView lgt, addSyllabus, prevQuest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,8 @@ public class AdminDashboard extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fst = FirebaseFirestore.getInstance();
         lgt = findViewById(R.id.Lgt);
+        addSyllabus = findViewById(R.id.addSyllabus);
+        prevQuest = findViewById(R.id.prevQuest);
 
         lgt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +37,20 @@ public class AdminDashboard extends AppCompatActivity {
                 Toast.makeText(AdminDashboard.this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(AdminDashboard.this, MainActivity.class));
                 finish();
+            }
+        });
+
+        addSyllabus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdminDashboard.this,SyllabusActivity.class));
+            }
+        });
+
+        prevQuest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdminDashboard.this,PreviosQuestPaperActivity.class));
             }
         });
 
