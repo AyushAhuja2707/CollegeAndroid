@@ -84,10 +84,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "Time-Table", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_practice:
+                startActivity(new Intent(HomeActivity.this, ViewAllSemesterActivity.class));
                 Toast.makeText(this, "Practice", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_syllabus:
-                Toast.makeText(this, "Syllabus", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this,ViewSyllabusActivity.class));
                 break;
             case R.id.nav_notification:
                 Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show();

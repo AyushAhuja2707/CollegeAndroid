@@ -16,6 +16,8 @@ public class AdminDashboard extends AppCompatActivity {
 
     FirebaseAuth mAuth;
     FirebaseFirestore fst;
+    TextView logouttext;
+    MaterialCardView lgt, addSyllabus, prevQuest;
     MaterialCardView lgt;
     MaterialCardView pushNoti;
 
@@ -27,6 +29,8 @@ public class AdminDashboard extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         fst = FirebaseFirestore.getInstance();
         lgt = findViewById(R.id.Lgt);
+        addSyllabus = findViewById(R.id.addSyllabus);
+        prevQuest = findViewById(R.id.prevQuest);
         pushNoti = findViewById(R.id.pushNoti);
 
         lgt.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +44,17 @@ public class AdminDashboard extends AppCompatActivity {
             }
         });
 
+        addSyllabus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdminDashboard.this,SyllabusActivity.class));
+            }
+        });
+
+        prevQuest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdminDashboard.this,PreviosQuestPaperActivity.class));
         pushNoti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

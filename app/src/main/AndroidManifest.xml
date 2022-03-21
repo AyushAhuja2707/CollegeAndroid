@@ -3,6 +3,8 @@
     package="com.example.ezee">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
@@ -13,6 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".SpdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubjectPdfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllSubjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAllSemesterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PreviosQuestPaperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewSyllabusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SyllabusActivity"
+            android:exported="false" />
             android:name=".PushNotifications"
             android:exported="false"/>
         <activity
@@ -51,6 +73,9 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
             android:resource="@drawable/tcet_logo" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
