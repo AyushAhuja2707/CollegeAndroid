@@ -20,6 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.w3c.dom.Document;
 
@@ -93,9 +94,11 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.nav_feedback:
-                Toast.makeText(this, "Feedback", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.drawer_layout,
+                        new FeedBackFragment()).commit();
                 break;
             case R.id.nav_logout:
+                FirebaseMessaging.getInstance().unsubscribeFromTopic("students");
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(this, "Logged Out Successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(HomeActivity.this, MainActivity.class));
