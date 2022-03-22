@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.card.MaterialCardView;
@@ -18,7 +19,6 @@ public class AdminDashboard extends AppCompatActivity {
     FirebaseFirestore fst;
     TextView logouttext;
     MaterialCardView lgt, addSyllabus, prevQuest;
-    MaterialCardView lgt;
     MaterialCardView pushNoti;
 
     @Override
@@ -51,16 +51,16 @@ public class AdminDashboard extends AppCompatActivity {
             }
         });
 
-        prevQuest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(AdminDashboard.this,PreviosQuestPaperActivity.class));
         pushNoti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(AdminDashboard.this, PushNotifications.class));
             }
         });
-
-    }
-}
+        prevQuest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AdminDashboard.this,PreviosQuestPaperActivity.class));
+        }
+});
+    }}

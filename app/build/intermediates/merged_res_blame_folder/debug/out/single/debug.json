@@ -24,6 +24,10 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_notifications_24.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_all_subjects.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_all_subjects.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
@@ -32,8 +36,16 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\font_combo.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\font\\combo.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_backup_table_24.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_backup_table_24.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_file_download_24.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_file_download_24.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -42,6 +54,10 @@
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_timetable.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\timetable.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_cancel.png.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\cancel.png"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_question_answer_24.xml.flat",
@@ -60,6 +76,10 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_showpdf.png.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\showpdf.png"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_tcet_logo.jpg.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\tcet_logo.jpg"
     },
@@ -76,6 +96,14 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_info_24.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_syllabus.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_syllabus.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_single_row_pdf.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\single_row_pdf.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
@@ -84,12 +112,20 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_single_row_sem_view.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\single_row_sem_view.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_notifications_24.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_notifications_24.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_subject_pdf.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_subject_pdf.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_admin_dashboard.xml.flat",
@@ -102,6 +138,10 @@
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_twitter.png.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\twitter.png"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_view_syllabus.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_view_syllabus.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_feedback.xml.flat",
@@ -124,12 +164,24 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\google.png"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_web.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\fragment_web.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_push_notifications.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_push_notifications.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_pdf_list.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\fragment_pdf_list.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_hamburger_icon.xml.flat",
@@ -144,12 +196,24 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\fragment_feedback.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_browsepdf.png.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\browsepdf.png"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_view_all_semester.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_view_all_semester.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\menu_drawer_menu.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\menu\\drawer_menu.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_spdf.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_spdf.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_notification.xml.flat",
@@ -184,12 +248,24 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_add_syllabus.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\fragment_add_syllabus.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_single_row_subject.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\single_row_subject.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_person_outline_24.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_person_outline_24.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_home.xml.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_previos_quest_paper.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_previos_quest_paper.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_syllabus.xml.flat",
