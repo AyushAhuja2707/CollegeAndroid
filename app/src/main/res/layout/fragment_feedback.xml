@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/background">
 
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="259dp"
@@ -83,6 +85,8 @@
         android:textSize="55dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

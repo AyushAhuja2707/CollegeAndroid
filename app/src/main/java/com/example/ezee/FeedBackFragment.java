@@ -51,6 +51,7 @@ public class FeedBackFragment extends Fragment {
         Button feedback_button;
         TextView textResult;
         FirebaseAuth mAuth;
+        final Loading[] loading = new Loading[1];
         FirebaseFirestore fst;
 
 
@@ -94,12 +95,11 @@ public class FeedBackFragment extends Fragment {
                         String emp = documentSnapshot.getString("email");
 
 
-
                         Log.i("Ay", emp);
 
+                        loading[0] = new Loading(getActivity());
 
-
-
+                        loading[0].startLoading();
 
                         Properties p = System.getProperties();
                         p.put("mail.smtp.host", "smtp.gmail.com");
@@ -140,6 +140,7 @@ public class FeedBackFragment extends Fragment {
                             msg2.addRecipient(Message.RecipientType.TO,new InternetAddress("ayushahuja200@gmail.com"));
 
                             Transport.send(msg2);
+                            loading[0].dismissDialog();
                             Log.i("Ay","Mail Bheja");
                             textResult.setText("Mail Sent ..");
 

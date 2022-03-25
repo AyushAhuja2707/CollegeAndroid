@@ -48,8 +48,9 @@
         <activity
             android:name="com.example.ezee.SyllabusActivity"
             android:exported="false" />
-            android:name=".PushNotifications"
-            android:exported="false"/>
+        <activity
+            android:name="com.example.ezee.PushNotifications"
+            android:exported="false" />
         <activity
             android:name="com.example.ezee.AdminDashboard"
             android:exported="false" />
