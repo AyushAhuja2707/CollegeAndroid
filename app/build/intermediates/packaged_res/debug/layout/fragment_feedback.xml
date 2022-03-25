@@ -42,15 +42,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/feedback_title"
-        android:layout_marginTop="32dp"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
         android:layout_marginRight="10dp"
         android:background="#30ffffff"
-        android:inputType="textMultiLine"
-        android:lines="10"
         android:drawableLeft="@drawable/ic_baseline_feedback_24_white"
         android:drawablePadding="20dp"
         android:hint="Enter FeedBack"
+        android:inputType="textMultiLine"
+        android:lines="10"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -74,17 +74,15 @@
 
     <TextView
         android:id="@+id/textResult"
-        android:layout_width="259dp"
-        android:layout_height="165dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="624dp"
+        android:layout_width="329dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="684dp"
         android:text=""
         android:textColor="@color/purple_500"
         android:textSize="55dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

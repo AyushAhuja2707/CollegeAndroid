@@ -1,6 +1,7 @@
 package com.example.ezee;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -41,15 +42,18 @@ import javax.mail.internet.MimeMessage;
 
 public class FeedBackFragment extends Fragment {
 
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v =  inflater.inflate(R.layout.fragment_feedback,container,false);
         EditText feedback_title,feedback_text;
         Button feedback_button;
-        TextView textResult = null;
+        TextView textResult;
         FirebaseAuth mAuth;
         FirebaseFirestore fst;
+
+
 
         String semail = "gautamsir076@gmail.com";
         String spass = "Gautam@3011";
@@ -72,7 +76,7 @@ public class FeedBackFragment extends Fragment {
         feedback_title = v.findViewById(R.id.feedback_title);
         feedback_button = v.findViewById(R.id.feedback_button);
         feedback_text = v.findViewById(R.id.feedback_text);
-
+        textResult = v.findViewById(R.id.textResult);
         feedback_button.setOnClickListener(new View.OnClickListener() {
 
 
@@ -135,15 +139,12 @@ public class FeedBackFragment extends Fragment {
                             msg2.setText(feed_text);
                             msg2.addRecipient(Message.RecipientType.TO,new InternetAddress("ayushahuja200@gmail.com"));
 
-
-
-
                             Transport.send(msg2);
-
                             Log.i("Ay","Mail Bheja");
+                            textResult.setText("Mail Sent ..");
 
-
-//                            textResult.setText("Mail Sent");
+                            Intent a =new Intent(getActivity(),HomeActivity.class);
+                            startActivity(a);
 
 //                    Transport.send(msg);
 
@@ -171,50 +172,13 @@ public class FeedBackFragment extends Fragment {
 
 
 
-//                Properties p = System.getProperties();
-//                p.put("mail.smtp.host", "smtp.gmail.com");
-//                p.put("mail.smtp.starttls.enable", "true");
-//                p.put("mail.smtp.port", "587");
-//                p.put("mail.smtp.auth", "true");
-//
-//                Log.i("Ay","Mil start");
-//
-//                Session session = Session.getInstance(p, new Authenticator() {
-//                    @Override
-//                    protected PasswordAuthentication getPasswordAuthentication() {
-//                        return new PasswordAuthentication(semail,spass);
-//                    }
-//                });
-//
-//
-//
-//                try {
-//                    MimeMessage msg = new MimeMessage(session);
-//                    msg.setSubject(feed_title);
-//                    msg.setText(feed_text);
-//                    msg.addRecipient(Message.RecipientType.TO,new InternetAddress("ayushahuja200@gmail.com"));
-//                    Transport.send(msg);
-//
-//                    Log.i("Ay","Mil Bheja");
-//
-////                    Transport.send(msg);
-//
-//
-//                } catch (MessagingException e) {
-//                    Log.i("Ay",e+"");
-//                    e.printStackTrace();
-//                }
-//
-//
-//            }
-//        });
-
-
         return  v;
 
 
     }
 
 
+
 }
+
 
