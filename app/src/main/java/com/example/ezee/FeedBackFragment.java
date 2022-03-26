@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 //androidx.fragment.app.Fragment fragment
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -54,8 +55,6 @@ public class FeedBackFragment extends Fragment {
         final Loading[] loading = new Loading[1];
         FirebaseFirestore fst;
 
-
-
         String semail = "gautamsir076@gmail.com";
         String spass = "Gautam@3011";
 
@@ -79,14 +78,11 @@ public class FeedBackFragment extends Fragment {
         feedback_text = v.findViewById(R.id.feedback_text);
         textResult = v.findViewById(R.id.textResult);
         feedback_button.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View view) {
 
                 String feed_title = feedback_title.getText().toString();
                 String feed_text = feedback_text.getText().toString();
-
 
                 DocumentReference data = fst.collection("Users").document(mAuth.getCurrentUser().getUid());
                 data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
@@ -122,9 +118,6 @@ public class FeedBackFragment extends Fragment {
                                 return new PasswordAuthentication(semail,spass);
                             }
                         });
-
-
-
 
                         try {
                             MimeMessage msg = new MimeMessage(session);

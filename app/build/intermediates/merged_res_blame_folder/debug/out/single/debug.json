@@ -156,6 +156,10 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\logout.xml"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_feed_back.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_feed_back.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_tcet_logo.jpg.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\tcet_logo.jpg"
     },
@@ -198,6 +202,10 @@
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_browsepdf.png.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\drawable\\browsepdf.png"
+    },
+    {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_addtt.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_addtt.xml"
     },
     {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",

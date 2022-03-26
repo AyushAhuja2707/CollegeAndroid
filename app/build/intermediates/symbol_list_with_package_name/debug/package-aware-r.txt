@@ -67,8 +67,10 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array dept
+array div
 array preloaded_fonts
 array sem
+array year
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -2605,6 +2607,10 @@ id SYM
 id SubjectName
 id TOP_END
 id TOP_START
+id TtBrowsePdf
+id TtCancel
+id TtShowPdf
+id TtTitle
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2664,6 +2670,11 @@ id actions
 id activity_chooser_view_content
 id add
 id addSyllabus
+id addtt
+id addttdeptspinner
+id addttdivspinner
+id addttsubmit
+id addttyearpinnerr
 id adjust_height
 id adjust_width
 id alertTitle
@@ -2992,6 +3003,7 @@ id registerName
 id registerName2
 id registertext
 id registerusername
+id relativeLayout
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3247,8 +3259,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_addtt
 layout activity_admin_dashboard
 layout activity_all_subjects
+layout activity_feed_back
 layout activity_forgot_pass
 layout activity_home
 layout activity_main

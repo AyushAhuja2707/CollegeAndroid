@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -37,40 +38,41 @@ public class ViewAllSemesterActivity extends AppCompatActivity implements View.O
     @Override
     public void onClick(View view) {
         Intent intent = null;
+        Log.i("intent", String.valueOf(view.getId()));
         switch (view.getId()){
             case R.id.sem3:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "3", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-III");
                 break;
                 
             case R.id.sem4:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "4", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-IV");
                 break;
             
             case R.id.sem5:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "5", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-V");
                 break;
             
             case R.id.sem6:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "6", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "6", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-VI");
                 break;
             
             case R.id.sem7:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "7", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "7", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-VII");
                 break;
             
             case R.id.sem8:
                 intent = new Intent(ViewAllSemesterActivity.this,AllSubjectsActivity.class);
-                Toast.makeText(this, "8", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "8", Toast.LENGTH_SHORT).show();
                 intent.putExtra("wsem","Semester-VIII");
                 break;
             default:

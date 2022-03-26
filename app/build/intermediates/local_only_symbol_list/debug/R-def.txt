@@ -4,8 +4,10 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array dept
+array div
 array preloaded_fonts
 array sem
+array year
 color black
 color purple_200
 color purple_500
@@ -45,7 +47,16 @@ drawable twitter
 font combo
 id Lgt
 id SubjectName
+id TtBrowsePdf
+id TtCancel
+id TtShowPdf
+id TtTitle
 id addSyllabus
+id addtt
+id addttdeptspinner
+id addttdivspinner
+id addttsubmit
+id addttyearpinnerr
 id amsg
 id apush
 id atitle
@@ -96,6 +107,7 @@ id registerName
 id registerName2
 id registertext
 id registerusername
+id relativeLayout
 id sem3
 id sem4
 id sem5
@@ -123,8 +135,10 @@ id topics
 id txt
 id uid
 id username
+layout activity_addtt
 layout activity_admin_dashboard
 layout activity_all_subjects
+layout activity_feed_back
 layout activity_forgot_pass
 layout activity_home
 layout activity_main

@@ -44,7 +44,7 @@ public class AllSubjectsActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         wsem = intent.getStringExtra("wsem");
-        Toast.makeText(this, "Mil gya " + wsem, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Got" + wsem, Toast.LENGTH_SHORT).show();
 
         reference = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();

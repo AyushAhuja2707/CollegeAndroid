@@ -27,4 +27,21 @@
         <item>Semester-VIII</item>
     </string-array>
 
+    <string-array name="year">
+        <item>Select Year</item>
+        <item>FE</item>
+        <item>SE</item>
+        <item>TE</item>
+        <item>BE</item>
+    </string-array>
+
+
+    <string-array name="div">
+        <item>Select Division</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+
+
 </resources>

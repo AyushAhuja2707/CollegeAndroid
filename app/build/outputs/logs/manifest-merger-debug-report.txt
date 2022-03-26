@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
 MERGED from [com.android.volley:volley:1.2.1] C:\Users\user\.gradle\caches\transforms-3\25e23f9d6639990dd6b5708772afefdd\transformed\volley-1.2.1\AndroidManifest.xml:2:1-7:12
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\user\.gradle\caches\transforms-3\8c3a374023e9797e01dcb89bdc34958b\transformed\dexter-6.0.2\AndroidManifest.xml:17:1-32:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\user\.gradle\caches\transforms-3\8e614f96138e66719c6e365d9402762c\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
@@ -88,20 +88,20 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\user\.gradle\caches\transforms
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\user\.gradle\caches\transforms-3\79f5a3fa03a16d194c897ec71b55329b\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\user\.gradle\caches\transforms-3\5c1e8ef5ed718b684a24d5d209cf4a67\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\user\.gradle\caches\transforms-3\d714c1dbcf48abbe744f73e78c203ba0\transformed\grpc-android-1.44.1\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
+INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
 	package
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-82:12
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:1-89:12
 		INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:2:11-69
@@ -140,7 +140,7 @@ ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:8:5-78
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:8:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\user\.gradle\caches\transforms-3\c7b4ce0cdc5c85224b4ed4bb9ce22c13\transformed\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-auth:21.0.1] C:\Users\user\.gradle\caches\transforms-3\c7b4ce0cdc5c85224b4ed4bb9ce22c13\transformed\firebase-auth-21.0.1\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-database:20.0.3] C:\Users\user\.gradle\caches\transforms-3\4c2788aa3b571827099aa7a71b310c22\transformed\firebase-database-20.0.3\AndroidManifest.xml:25:5-79
@@ -172,7 +172,7 @@ MERGED from [io.grpc:grpc-android:1.44.1] C:\Users\user\.gradle\caches\transform
 	android:name
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:8:22-76
 application
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:10:5-80:19
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:10:5-87:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\user\.gradle\caches\transforms-3\8c3a374023e9797e01dcb89bdc34958b\transformed\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.karumi:dexter:6.0.2] C:\Users\user\.gradle\caches\transforms-3\8c3a374023e9797e01dcb89bdc34958b\transformed\dexter-6.0.2\AndroidManifest.xml:26:5-30:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\user\.gradle\caches\transforms-3\8e614f96138e66719c6e365d9402762c\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
@@ -255,126 +255,138 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\user\.gradle\cache
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:16:9-40
-activity#com.example.ezee.SpdfActivity
+activity#com.example.ezee.AddttActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:17:9-19:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:18:13-41
-activity#com.example.ezee.SubjectPdfActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:18:13-42
+activity#com.example.ezee.FeedBackActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:20:9-22:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:22:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:21:13-47
-activity#com.example.ezee.AllSubjectsActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:21:13-45
+activity#com.example.ezee.SpdfActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:23:9-25:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:25:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:24:13-48
-activity#com.example.ezee.ViewAllSemesterActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:24:13-41
+activity#com.example.ezee.SubjectPdfActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:26:9-28:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:27:13-52
-activity#com.example.ezee.PreviosQuestPaperActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:27:13-47
+activity#com.example.ezee.AllSubjectsActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:30:13-54
-activity#com.example.ezee.ViewSyllabusActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:30:13-48
+activity#com.example.ezee.ViewAllSemesterActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:32:9-34:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:33:13-49
-activity#com.example.ezee.SyllabusActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:33:13-52
+activity#com.example.ezee.PreviosQuestPaperActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:35:9-37:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:36:13-45
-activity#com.example.ezee.PushNotifications
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:38:9-40:39
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:36:13-54
+activity#com.example.ezee.ViewSyllabusActivity
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:39:13-46
-activity#com.example.ezee.AdminDashboard
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:39:13-49
+activity#com.example.ezee.SyllabusActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:42:13-43
-activity#com.example.ezee.ForgotPassActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:42:13-45
+activity#com.example.ezee.PushNotifications
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:45:13-47
-activity#com.example.ezee.RegisterActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:45:13-46
+activity#com.example.ezee.AdminDashboard
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:48:13-45
-activity#com.example.ezee.MainActivity
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:48:13-43
+activity#com.example.ezee.ForgotPassActivity
 ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:51:13-41
-activity#com.example.ezee.HomeActivity
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:53:9-56:59
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:51:13-47
+activity#com.example.ezee.RegisterActivity
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
 		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:55:13-37
+	android:name
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:54:13-45
+activity#com.example.ezee.MainActivity
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:56:9-58:40
+	android:exported
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:58:13-37
+	android:name
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:57:13-41
+activity#com.example.ezee.HomeActivity
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:59:9-62:59
+	android:exported
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:61:13-37
 	android:theme
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:56:13-56
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:62:13-56
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:54:13-41
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:60:13-41
 activity#com.example.ezee.SplashActivity
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:57:9-64:20
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:63:9-71:20
 	android:exported
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:59:13-36
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:65:13-36
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:58:13-43
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:64:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:60:13-63:29
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:66:13-70:29
 action#android.intent.action.MAIN
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:61:17-69
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:67:17-69
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:61:25-66
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:67:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:62:17-77
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:69:17-77
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:62:27-74
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:69:27-74
 service#com.example.ezee.FCMService
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:66:9-72:19
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:73:9-79:19
 	android:exported
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:68:13-37
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:75:13-37
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:67:13-39
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:74:13-39
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:69:13-71:29
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:76:13-78:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:70:17-78
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:77:17-78
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:70:25-75
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:77:25-75
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:74:9-76:54
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:81:9-83:54
 	android:resource
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:76:13-51
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:83:13-51
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:75:13-83
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:82:13-83
 meta-data#preloaded_fonts
-ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:77:9-79:57
+ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:84:9-86:57
 	android:resource
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:79:13-54
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:86:13-54
 	android:name
-		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:78:13-43
+		ADDED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml:85:13-43
 uses-sdk
 INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\sem 6\PS\Ezee App\CollegeAndroid\app\src\main\AndroidManifest.xml

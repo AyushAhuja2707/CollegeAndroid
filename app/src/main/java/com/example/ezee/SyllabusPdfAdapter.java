@@ -42,13 +42,14 @@ public class SyllabusPdfAdapter extends RecyclerView.Adapter<SyllabusPdfAdapter.
     @Override
     public void onBindViewHolder(@NonNull myviewholder holder, @SuppressLint("RecyclerView") int position) {
         holder.syllabusPdfTitle.setText(data.get(position).getSem());
-        Toast.makeText(holder.syllabusPdfTitle.getContext(), data.get(position).getFileurl(), Toast.LENGTH_LONG).show();
+//        Toast.makeText(holder.syllabusPdfTitle.getContext(), data.get(position).getFileurl(), Toast.LENGTH_LONG).show();
 
         holder.syllabusCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                activity.getSupportFragmentManager().beginTransaction().replace(R.id.pdfListContainer,new WebFragment(data.get(position).getFileurl(),data.get(position).getSem())).commit();
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.pdfListContainer,
+                        new WebFragment(data.get(position).getFileurl(),data.get(position).getSem())).commit();
             }
         });
 
