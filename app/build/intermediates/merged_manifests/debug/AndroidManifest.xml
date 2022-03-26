@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.example.ezee.TtActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.ezee.AddttActivity"
             android:exported="false" />
         <activity

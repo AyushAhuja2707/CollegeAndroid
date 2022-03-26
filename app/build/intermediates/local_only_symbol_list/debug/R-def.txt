@@ -149,6 +149,7 @@ layout activity_spdf
 layout activity_splash
 layout activity_subject_pdf
 layout activity_syllabus
+layout activity_tt
 layout activity_view_all_semester
 layout activity_view_syllabus
 layout drawer_header

@@ -3272,6 +3272,7 @@ int layout activity_spdf 0x7f0d0026
 int layout activity_splash 0x7f0d0027
 int layout activity_subject_pdf 0x7f0d0028
 int layout activity_syllabus 0x7f0d0029
+int layout activity_tt 0x7f0d0097
 int layout activity_view_all_semester 0x7f0d002a
 int layout activity_view_syllabus 0x7f0d002b
 int layout browser_actions_context_menu_page 0x7f0d002c

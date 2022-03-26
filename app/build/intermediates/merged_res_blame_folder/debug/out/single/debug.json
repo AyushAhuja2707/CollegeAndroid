@@ -72,6 +72,10 @@
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
+        "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_tt.xml.flat",
+        "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_tt.xml"
+    },
+    {
         "merged": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "E:\\sem 6\\PS\\Ezee App\\CollegeAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
