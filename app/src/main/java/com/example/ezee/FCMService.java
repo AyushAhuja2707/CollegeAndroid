@@ -25,16 +25,22 @@ public class FCMService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
+        sp = getSharedPreferences("pointers", MODE_PRIVATE);
+
         if (remoteMessage.getData() != null){
             title = remoteMessage.getData().get("title");
             msg = remoteMessage.getData().get("body");
-            new dbThread().start();
+            if (!sp.getBoolean("ADMIN", false)){
+                new dbThread().start();
+            }
             showNotification(title, msg);
         }
         else if (remoteMessage.getNotification() != null) {
             title = remoteMessage.getNotification().getTitle();
             msg = remoteMessage.getNotification().getBody();
-            new dbThread().start();
+            if (!sp.getBoolean("ADMIN", false)){
+                new dbThread().start();
+            }
             showNotification(title, msg);
         }
     }

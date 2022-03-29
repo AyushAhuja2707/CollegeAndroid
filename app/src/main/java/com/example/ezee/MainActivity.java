@@ -167,6 +167,8 @@ public class MainActivity extends AppCompatActivity {
                                                 Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
                                         }
                                     });
+                                    edt.putBoolean("ADMIN", true);
+                                    edt.apply();
                                     startActivity(new Intent(MainActivity.this, AdminDashboard.class));
                                 }
                                 else {
@@ -185,6 +187,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     edt.putInt("BEG", beg);
                                     edt.putInt("END", end);
+                                    edt.putBoolean("ADMIN", false);
                                     edt.apply();
 
                                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
