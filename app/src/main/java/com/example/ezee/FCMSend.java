@@ -34,7 +34,7 @@ public class FCMSend {
             JSONObject json = new JSONObject();
             json.put("to", token);
             json.put("priority", "high");
-            json.put("notification", notification);
+            json.put("data", notification);
 
             JsonObjectRequest jsonReq = new JsonObjectRequest(BASE_URL, json, new Response.Listener<JSONObject>() {
                 @Override

@@ -33,6 +33,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     FirebaseFirestore fst;
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        navigationView.setCheckedItem(R.id.nav_timetable);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
@@ -91,7 +97,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(HomeActivity.this,ViewSyllabusActivity.class));
                 break;
             case R.id.nav_notification:
-                Toast.makeText(this, "Notifications", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HomeActivity.this, NotificationHistory.class));
                 break;
             case R.id.nav_feedback:
                 startActivity(new Intent(HomeActivity.this,FeedBackActivity.class));

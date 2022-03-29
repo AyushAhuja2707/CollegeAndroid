@@ -2599,6 +2599,7 @@ id FUNCTION
 id Lgt
 id META
 id NO_DEBUG
+id NotiHistRclV
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2954,6 +2955,8 @@ id noState
 id none
 id normal
 id north
+id noti_msg
+id noti_title
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -3266,6 +3269,7 @@ layout activity_feed_back
 layout activity_forgot_pass
 layout activity_home
 layout activity_main
+layout activity_notification_history
 layout activity_previos_quest_paper
 layout activity_push_notifications
 layout activity_register
@@ -3348,6 +3352,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout notification_action
 layout notification_action_tombstone
+layout notification_block
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media

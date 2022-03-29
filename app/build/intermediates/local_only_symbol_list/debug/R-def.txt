@@ -46,6 +46,7 @@ drawable timetable
 drawable twitter
 font combo
 id Lgt
+id NotiHistRclV
 id SubjectName
 id TtBrowsePdf
 id TtCancel
@@ -86,6 +87,8 @@ id nav_practice
 id nav_syllabus
 id nav_timetable
 id nav_view
+id noti_msg
+id noti_title
 id others
 id password
 id pdfListContainer
@@ -142,6 +145,7 @@ layout activity_feed_back
 layout activity_forgot_pass
 layout activity_home
 layout activity_main
+layout activity_notification_history
 layout activity_previos_quest_paper
 layout activity_push_notifications
 layout activity_register
@@ -158,6 +162,7 @@ layout fragment_feedback
 layout fragment_pdf_list
 layout fragment_web
 layout loading_spinner
+layout notification_block
 layout single_row_pdf
 layout single_row_sem_view
 layout single_row_subject
