@@ -4,6 +4,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 
 import androidx.annotation.NonNull;
@@ -14,25 +15,26 @@ import androidx.room.Room;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import java.util.Random;
-
 public class FCMService extends FirebaseMessagingService {
 
+    SharedPreferences sp;
+    SharedPreferences.Editor edt;
+
     String title, msg;
-    int uid;
+    int uid, limit = 3;
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         if (remoteMessage.getData() != null){
             title = remoteMessage.getData().get("title");
             msg = remoteMessage.getData().get("body");
-//            new dbThread().start();
+            new dbThread().start();
             showNotification(title, msg);
         }
         else if (remoteMessage.getNotification() != null) {
             title = remoteMessage.getNotification().getTitle();
             msg = remoteMessage.getNotification().getBody();
-//            new dbThread().start();
+            new dbThread().start();
             showNotification(title, msg);
         }
     }
@@ -59,10 +61,7 @@ public class FCMService extends FirebaseMessagingService {
             notificationManager.createNotificationChannel(notificationChannel);
         }
 
-
-
-        Random rd = new Random();
-        notificationManager.notify(rd.nextInt(), builder.build());
+        notificationManager.notify(uid, builder.build());
     }
 
     class dbThread extends Thread{
@@ -70,12 +69,28 @@ public class FCMService extends FirebaseMessagingService {
         public void run() {
             super.run();
 
+            sp = getSharedPreferences("pointers", MODE_PRIVATE);
+            uid = sp.getInt("END", 0)+1;
+
+            edt = sp.edit();
+            edt.putInt("END", uid);
+            edt.apply();
+
             AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                     AppDatabase.class, "notifications").build();
 
             NotiDAO notiDao = db.userDao();
-            notiDao.insert(new NotiClass(title, msg));
+            notiDao.insert(new NotiClass(uid, title, msg));
 //            Log.i("Task", "Inserted in DB");
+
+            int beg = sp.getInt("BEG", 0);
+            int end = sp.getInt("END", 0);
+
+            if (end-beg+1 > limit){
+                notiDao.deleteByUID(beg);
+                edt.putInt("BEG", beg+1);
+                edt.apply();
+            }
         }
     }
 

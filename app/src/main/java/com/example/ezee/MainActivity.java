@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -151,6 +152,10 @@ public class MainActivity extends AppCompatActivity {
                         data.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                             @Override
                             public void onSuccess(DocumentSnapshot documentSnapshot) {
+
+                                SharedPreferences sp = getSharedPreferences("pointers", MODE_PRIVATE);
+                                SharedPreferences.Editor edt = sp.edit();
+
                                 admin = documentSnapshot.getBoolean("admin");
                                 if (admin) {
                                     FirebaseMessaging.getInstance().subscribeToTopic("admins").addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -174,6 +179,14 @@ public class MainActivity extends AppCompatActivity {
                                                 Toast.makeText(MainActivity.this, "Couldn't fetch Notifications", Toast.LENGTH_SHORT).show();
                                         }
                                     });
+
+                                    int beg = sp.getInt("BEG", 0);
+                                    int end = sp.getInt("END", 0);
+
+                                    edt.putInt("BEG", beg);
+                                    edt.putInt("END", end);
+                                    edt.apply();
+
                                     startActivity(new Intent(MainActivity.this, HomeActivity.class));
                                 }
                                 load.dismissDialog();

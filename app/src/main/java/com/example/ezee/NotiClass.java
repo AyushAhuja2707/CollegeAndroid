@@ -16,7 +16,8 @@ public class NotiClass {
     @ColumnInfo(name = "message")
     public String msg;
 
-    public NotiClass(String title, String msg) {
+    public NotiClass(int uid, String title, String msg) {
+        this.uid = uid;
         this.title = title;
         this.msg = msg;
     }

@@ -10,12 +10,12 @@ import java.util.List;
 @Dao
 public interface NotiDAO {
 
-    @Query("SELECT * FROM NotiClass LIMIT 50")
+    @Query("SELECT * FROM NotiClass LIMIT 3")
     List<NotiClass> getallNoti();
 
     @Insert
     void insert(NotiClass notifications);
 
-    @Delete
-    void delete(NotiClass notifications);
+    @Query("DELETE FROM NotiClass WHERE uid=:uid")
+    void deleteByUID(int uid);
 }
