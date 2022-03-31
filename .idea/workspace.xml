@@ -14,12 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9eada93f-8b58-4345-ac34-00923d38a298" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/FCMService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/FCMService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiHistAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotiHistAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotificationHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ezee/NotificationHistory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/notification_block.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/notification_block.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

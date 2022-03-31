@@ -17,6 +17,7 @@ public class NotificationHistory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_history);
+        getSupportActionBar().setTitle("Notifications");
 
         NotiHist = (RecyclerView) findViewById(R.id.NotiHistRclV);
         NotiHist.setLayoutManager(new LinearLayoutManager(this));

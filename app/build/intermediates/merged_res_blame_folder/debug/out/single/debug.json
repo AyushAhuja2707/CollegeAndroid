@@ -16,12 +16,12 @@
         "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable\\hamburger_icon.xml"
     },
     {
-        "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_notifications_24.xml.flat",
-        "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_notifications_24.xml"
-    },
-    {
         "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_person_outline_24.xml.flat",
         "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_person_outline_24.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_baseline_notifications_24.xml.flat",
+        "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable-v24\\ic_baseline_notifications_24.xml"
     },
     {
         "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_notification.xml.flat",
@@ -36,12 +36,12 @@
         "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_push_notifications.xml"
     },
     {
-        "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_feedback_24_white.xml.flat",
-        "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_feedback_24_white.xml"
-    },
-    {
         "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_tt.xml.flat",
         "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\layout\\activity_tt.xml"
+    },
+    {
+        "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_feedback_24_white.xml.flat",
+        "source": "D:\\Projects\\Android\\CollegeAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_feedback_24_white.xml"
     },
     {
         "merged": "D:\\Projects\\Android\\CollegeAndroid\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register.xml.flat",
