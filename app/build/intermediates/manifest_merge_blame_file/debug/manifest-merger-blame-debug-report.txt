@@ -13,188 +13,190 @@
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:5:5-67
 11-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:5:22-64
-12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-12-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:6:5-80
-12-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:6:22-77
-13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-13-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:7:5-81
-13-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:7:22-78
-14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:8:5-79
-14-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:8:22-76
-15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-15-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
-15-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:23:22-65
-16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-16-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
-16-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
-17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
-17-->[com.google.android.gms:play-services-measurement:20.1.0] C:\Users\user\.gradle\caches\transforms-3\267748b77733d744b6ed272b840b9182\transformed\play-services-measurement-20.1.0\AndroidManifest.xml:26:5-110
-17-->[com.google.android.gms:play-services-measurement:20.1.0] C:\Users\user\.gradle\caches\transforms-3\267748b77733d744b6ed272b840b9182\transformed\play-services-measurement-20.1.0\AndroidManifest.xml:26:22-107
-18    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
-18-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\user\.gradle\caches\transforms-3\d652fdf93205983d37bf95f4cad8e73a\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
-18-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\user\.gradle\caches\transforms-3\d652fdf93205983d37bf95f4cad8e73a\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
-19
-20    <application
-20-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:10:5-90:19
-21        android:allowBackup="true"
-21-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:11:9-35
-22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.7.0] C:\Users\user\.gradle\caches\transforms-3\4a73645463199b9fea916370cbff35e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
-23        android:debuggable="true"
-24        android:icon="@mipmap/tcet_logo"
-24-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:12:9-41
-25        android:label="@string/app_name"
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:6:5-65
+12-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:6:22-63
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:7:5-80
+13-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:8:5-81
+14-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:9:5-79
+15-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+16-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
+16-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:23:22-65
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
+17-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
+18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+18-->[com.google.android.gms:play-services-measurement:20.1.0] C:\Users\user\.gradle\caches\transforms-3\267748b77733d744b6ed272b840b9182\transformed\play-services-measurement-20.1.0\AndroidManifest.xml:26:5-110
+18-->[com.google.android.gms:play-services-measurement:20.1.0] C:\Users\user\.gradle\caches\transforms-3\267748b77733d744b6ed272b840b9182\transformed\play-services-measurement-20.1.0\AndroidManifest.xml:26:22-107
+19    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+19-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\user\.gradle\caches\transforms-3\d652fdf93205983d37bf95f4cad8e73a\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+19-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\user\.gradle\caches\transforms-3\d652fdf93205983d37bf95f4cad8e73a\transformed\play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
+20
+21    <application
+21-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:11:5-91:19
+22        android:allowBackup="true"
+22-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:12:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.7.0] C:\Users\user\.gradle\caches\transforms-3\4a73645463199b9fea916370cbff35e3\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@mipmap/tcet_logo"
 25-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:13:9-41
-26        android:roundIcon="@mipmap/tcet_logo"
-26-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:14:9-46
-27        android:supportsRtl="true"
-27-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:15:9-35
-28        android:testOnly="true"
+26        android:label="@string/app_name"
+26-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:14:9-41
+27        android:roundIcon="@mipmap/tcet_logo"
+27-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:15:9-46
+28        android:supportsRtl="true"
+28-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:16:9-35
 29        android:theme="@style/AppTheme" >
-29-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:16:9-40
+29-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:17:9-40
 30        <activity
-30-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:17:9-19:40
+30-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:18:9-20:40
 31            android:name="com.example.ezee.NotificationHistory"
-31-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:18:13-48
+31-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:19:13-48
 32            android:exported="false" />
-32-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:19:13-37
+32-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:20:13-37
 33        <activity
-33-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:20:9-22:40
+33-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:21:9-23:40
 34            android:name="com.example.ezee.TtActivity"
-34-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:21:13-39
+34-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:22:13-39
 35            android:exported="false" />
-35-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:22:13-37
+35-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:23:13-37
 36        <activity
-36-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:23:9-25:40
+36-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:24:9-26:40
 37            android:name="com.example.ezee.AddttActivity"
-37-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:24:13-42
+37-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:25:13-42
 38            android:exported="false" />
-38-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:25:13-37
+38-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:26:13-37
 39        <activity
-39-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:26:9-28:40
+39-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:27:9-29:40
 40            android:name="com.example.ezee.FeedBackActivity"
-40-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:27:13-45
+40-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:28:13-45
 41            android:exported="false" />
-41-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:28:13-37
+41-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:29:13-37
 42        <activity
-42-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:29:9-31:40
+42-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:30:9-32:40
 43            android:name="com.example.ezee.SpdfActivity"
-43-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:30:13-41
+43-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:31:13-41
 44            android:exported="false" />
-44-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:31:13-37
+44-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:32:13-37
 45        <activity
-45-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:32:9-34:40
+45-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:33:9-35:40
 46            android:name="com.example.ezee.SubjectPdfActivity"
-46-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:33:13-47
+46-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:34:13-47
 47            android:exported="false" />
-47-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:34:13-37
+47-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:35:13-37
 48        <activity
-48-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:35:9-37:40
+48-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:36:9-38:40
 49            android:name="com.example.ezee.AllSubjectsActivity"
-49-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:36:13-48
+49-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:37:13-48
 50            android:exported="false" />
-50-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:37:13-37
+50-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:38:13-37
 51        <activity
-51-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:38:9-40:40
+51-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:39:9-41:40
 52            android:name="com.example.ezee.ViewAllSemesterActivity"
-52-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:39:13-52
+52-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:40:13-52
 53            android:exported="false" />
-53-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:40:13-37
+53-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:41:13-37
 54        <activity
-54-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:41:9-43:40
+54-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:42:9-44:40
 55            android:name="com.example.ezee.PreviosQuestPaperActivity"
-55-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:42:13-54
+55-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:43:13-54
 56            android:exported="false" />
-56-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:43:13-37
+56-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:44:13-37
 57        <activity
-57-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:44:9-46:40
+57-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:45:9-47:40
 58            android:name="com.example.ezee.ViewSyllabusActivity"
-58-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:45:13-49
+58-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:46:13-49
 59            android:exported="false" />
-59-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:46:13-37
+59-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:47:13-37
 60        <activity
-60-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:47:9-49:40
+60-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:48:9-50:40
 61            android:name="com.example.ezee.SyllabusActivity"
-61-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:48:13-45
+61-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:49:13-45
 62            android:exported="false" />
-62-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:49:13-37
+62-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:50:13-37
 63        <activity
-63-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:50:9-52:40
+63-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:51:9-53:40
 64            android:name="com.example.ezee.PushNotifications"
-64-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:51:13-46
+64-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:52:13-46
 65            android:exported="false" />
-65-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:52:13-37
+65-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:53:13-37
 66        <activity
-66-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:53:9-55:40
+66-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:54:9-56:40
 67            android:name="com.example.ezee.AdminDashboard"
-67-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:54:13-43
+67-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:55:13-43
 68            android:exported="false" />
-68-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:55:13-37
+68-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:56:13-37
 69        <activity
-69-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:56:9-58:40
+69-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:57:9-59:40
 70            android:name="com.example.ezee.ForgotPassActivity"
-70-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:57:13-47
+70-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:58:13-47
 71            android:exported="false" />
-71-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:58:13-37
+71-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:59:13-37
 72        <activity
-72-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:59:9-61:40
+72-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:60:9-62:40
 73            android:name="com.example.ezee.RegisterActivity"
-73-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:60:13-45
+73-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:61:13-45
 74            android:exported="false" />
-74-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:61:13-37
+74-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:62:13-37
 75        <activity
-75-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:62:9-64:40
+75-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:63:9-65:40
 76            android:name="com.example.ezee.MainActivity"
-76-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:63:13-41
+76-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:64:13-41
 77            android:exported="false" />
-77-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:64:13-37
+77-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:65:13-37
 78        <activity
-78-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:65:9-68:59
+78-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:66:9-69:59
 79            android:name="com.example.ezee.HomeActivity"
-79-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:66:13-41
+79-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:67:13-41
 80            android:exported="false"
-80-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:67:13-37
+80-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:68:13-37
 81            android:theme="@style/AppTheme.NoActionBar" />
-81-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:68:13-56
+81-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:69:13-56
 82        <activity
-82-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:69:9-77:20
+82-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:70:9-78:20
 83            android:name="com.example.ezee.SplashActivity"
-83-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:70:13-43
+83-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:71:13-43
 84            android:exported="true" >
-84-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:71:13-36
+84-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:72:13-36
 85            <intent-filter>
-85-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:72:13-76:29
+85-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:73:13-77:29
 86                <action android:name="android.intent.action.MAIN" />
-86-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:73:17-69
-86-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:73:25-66
+86-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:74:17-69
+86-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:74:25-66
 87
 88                <category android:name="android.intent.category.LAUNCHER" />
-88-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:75:17-77
-88-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:75:27-74
+88-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:76:17-77
+88-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:76:27-74
 89            </intent-filter>
 90        </activity>
 91
 92        <service
-92-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:79:9-85:19
+92-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:80:9-86:19
 93            android:name="com.example.ezee.FCMService"
-93-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:80:13-39
+93-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:81:13-39
 94            android:exported="false" >
-94-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:81:13-37
+94-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:82:13-37
 95            <intent-filter>
-95-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:82:13-84:29
+95-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:13-85:29
 96                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-96-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:17-78
-96-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:25-75
+96-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:84:17-78
+96-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:84:25-75
 97            </intent-filter>
 98        </service>
 99
 100        <meta-data
-100-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:87:9-89:57
+100-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:88:9-90:57
 101            android:name="preloaded_fonts"
-101-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:88:13-43
+101-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:89:13-43
 102            android:resource="@array/preloaded_fonts" />
-102-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:89:13-54
+102-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:90:13-54
 103
 104        <activity
 104-->[com.karumi:dexter:6.0.2] C:\Users\user\.gradle\caches\transforms-3\8c3a374023e9797e01dcb89bdc34958b\transformed\dexter-6.0.2\AndroidManifest.xml:27:9-29:72
@@ -378,10 +380,10 @@
 199            android:exported="false" >
 199-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\user\.gradle\caches\transforms-3\6d86ef43a04a90870d5496dd60c4bb4a\transformed\firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
 200            <intent-filter android:priority="-500" >
-200-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:82:13-84:29
+200-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:13-85:29
 201                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-201-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:17-78
-201-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:83:25-75
+201-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:84:17-78
+201-->E:\sem 6\PS\EzeApp2\app\src\main\AndroidManifest.xml:84:25-75
 202            </intent-filter>
 203        </service>
 204        <service
