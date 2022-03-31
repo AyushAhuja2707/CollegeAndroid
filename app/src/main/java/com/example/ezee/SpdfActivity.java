@@ -47,7 +47,7 @@ public class SpdfActivity extends AppCompatActivity {
                 pd.dismiss();
             }
         });
-
+        spdfWebView.getSettings().setJavaScriptEnabled(true);
         String url="";
 
         try{
