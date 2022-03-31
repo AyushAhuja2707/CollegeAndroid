@@ -27,8 +27,14 @@ public class NotiHistAdapter extends RecyclerView.Adapter<NotiHistAdapter.holder
 
     @Override
     public void onBindViewHolder(@NonNull holder holder, int position) {
+       String dt = data.get(position).getDt();
+       String date_str = dt.split("-")[0];
+       String time_str = dt.split("-")[1];
+
        holder.title.setText(data.get(position).getTitle());
        holder.msg.setText(data.get(position).getMsg());
+       holder.date.setText(date_str);
+       holder.time.setText(time_str);
     }
 
     @Override
@@ -40,11 +46,15 @@ public class NotiHistAdapter extends RecyclerView.Adapter<NotiHistAdapter.holder
 
         TextView title;
         TextView msg;
+        TextView date;
+        TextView time;
 
         public holder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.noti_title);
             msg = itemView.findViewById(R.id.noti_msg);
+            date = itemView.findViewById(R.id.noti_date);
+            time = itemView.findViewById(R.id.noti_time);
 
         }
     }

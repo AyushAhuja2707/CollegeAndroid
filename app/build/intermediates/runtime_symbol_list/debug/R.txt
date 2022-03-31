@@ -2870,6 +2870,7 @@ int id light 0x7f0a0113
 int id line1 0x7f0a0114
 int id line3 0x7f0a0115
 int id linear 0x7f0a0116
+int id linearLayoutCompat 0x7f0a024a
 int id listMode 0x7f0a0117
 int id list_item 0x7f0a0118
 int id llayout 0x7f0a0119
@@ -2954,7 +2955,9 @@ int id noState 0x7f0a0167
 int id none 0x7f0a0168
 int id normal 0x7f0a0169
 int id north 0x7f0a016a
+int id noti_date 0x7f0a024b
 int id noti_msg 0x7f0a0247
+int id noti_time 0x7f0a024c
 int id noti_title 0x7f0a0248
 int id notification_background 0x7f0a016b
 int id notification_main_column 0x7f0a016c

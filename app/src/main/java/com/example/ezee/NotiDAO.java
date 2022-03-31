@@ -10,7 +10,8 @@ import java.util.List;
 @Dao
 public interface NotiDAO {
 
-    @Query("SELECT * FROM NotiClass LIMIT 3")
+    // TODO: Change Notification Limit here
+    @Query("SELECT * FROM NotiClass LIMIT 10")
     List<NotiClass> getallNoti();
 
     @Insert

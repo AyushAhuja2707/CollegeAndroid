@@ -7,7 +7,7 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat"
-        android:layout_width="300dp"
+        android:layout_width="325dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="15dp"
@@ -35,11 +35,10 @@
 
     <TextView
         android:layout_marginTop="22dp"
-        android:id="@+id/date"
+        android:id="@+id/noti_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date"
-        android:textStyle="bold"
         android:textSize="16dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,14 +46,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/time"
+        android:id="@+id/noti_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:text="Time"
         android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="@+id/date"
-        app:layout_constraintStart_toStartOf="@+id/date"
-        app:layout_constraintTop_toBottomOf="@+id/date" />
+        app:layout_constraintEnd_toEndOf="@+id/noti_date"
+        app:layout_constraintStart_toStartOf="@+id/noti_date"
+        app:layout_constraintTop_toBottomOf="@+id/noti_date" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

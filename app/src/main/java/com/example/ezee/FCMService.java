@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -15,17 +16,26 @@ import androidx.room.Room;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class FCMService extends FirebaseMessagingService {
 
     SharedPreferences sp;
     SharedPreferences.Editor edt;
 
-    String title, msg;
-    int uid, limit = 3;
+    String title, msg, dt;
+
+    // TODO: Change Notification Limit here
+    int uid, limit = 10;
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
         sp = getSharedPreferences("pointers", MODE_PRIVATE);
+
+        SimpleDateFormat ft = new SimpleDateFormat("dd MMMM, yy-hh:mm aa");
+        dt = ft.format(new Date());
+//        Log.i("Date", dt);
 
         if (remoteMessage.getData() != null){
             title = remoteMessage.getData().get("title");
@@ -86,7 +96,7 @@ public class FCMService extends FirebaseMessagingService {
                     AppDatabase.class, "notifications").build();
 
             NotiDAO notiDao = db.userDao();
-            notiDao.insert(new NotiClass(uid, title, msg));
+            notiDao.insert(new NotiClass(uid, title, msg, dt));
 //            Log.i("Task", "Inserted in DB");
 
             int beg = sp.getInt("BEG", 0);

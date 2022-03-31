@@ -2871,6 +2871,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayoutCompat
 id listMode
 id list_item
 id llayout
@@ -2955,7 +2956,9 @@ id noState
 id none
 id normal
 id north
+id noti_date
 id noti_msg
+id noti_time
 id noti_title
 id notification_background
 id notification_main_column
