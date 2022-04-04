@@ -1,8 +1,5 @@
 package com.example.ezee;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +10,9 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -69,6 +69,9 @@ public class PushNotifications extends AppCompatActivity implements AdapterView.
 
     public void onItemSelected(@NonNull AdapterView<?> parent, View view, int position, long id) {
         selectedTopic = parent.getItemAtPosition(position).toString();
+        TextView sp = (TextView) parent.getChildAt(0);
+        sp.setTextColor(Color.WHITE);
+        sp.setTextSize(18);
         Toast.makeText(parent.getContext(), selectedTopic+" will be notified", Toast.LENGTH_LONG).show();
     }
     public void onNothingSelected(AdapterView<?> arg0) {

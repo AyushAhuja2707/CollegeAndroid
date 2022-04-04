@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\sem 6\\PS\\EzeApp2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "D:\\Projects\\Android\\SRM_App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\.gradle\\caches\\transforms-3\\f73bb7ba92c974a370fc87fec7127d0d\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\gauta\\.gradle\\caches\\transforms-3\\f73bb7ba92c974a370fc87fec7127d0d\\transformed\\appcompat-1.4.1\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

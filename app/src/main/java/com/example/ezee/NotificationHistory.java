@@ -1,11 +1,13 @@
 package com.example.ezee;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
-import android.os.Bundle;
+
 import java.util.Collections;
 import java.util.List;
 
